@@ -3,7 +3,6 @@ package sample.Model;
 
 
 public class Clock {
-
     private int year;
     private int month;
     private int day;
@@ -19,6 +18,13 @@ public class Clock {
         this.hour = hour;
         this.minute = minute;
         this.milli = milli;
+    }
+
+    public String toStringDate() {
+        return  year+"/"+month+"/"+day;
+    }
+    public String toStringTime(){
+        return hour+":"+minute;
     }
 
     public int getYear() {

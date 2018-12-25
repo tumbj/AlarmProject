@@ -3,13 +3,17 @@ package sample.Model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class AlarmClock {
+public class AlarmClock  {
     private Time time;
-    private List<Clock> allAlarm;
+    public List<Clock> allAlarm;
+
 
     public AlarmClock() {
         this.time = new Time();
         this.allAlarm = new ArrayList<>();
+        allAlarm.add(new Clock(2018,12,25,23,48,10));
+
+        //not have minute is 60
     }
 
     public void setAlarm(){
@@ -22,4 +26,8 @@ public class AlarmClock {
     public List getAllAlarm(){
         return allAlarm;
     }
+
+
+
+
 }

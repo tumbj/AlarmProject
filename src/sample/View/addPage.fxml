@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="173.0" prefWidth="588.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller.AddPageController">
+   <children>
+      <Label layoutX="423.0" layoutY="95.0" text="Minutes:" />
+      <ChoiceBox fx:id="minuteSelect" layoutX="476.0" layoutY="90.0" prefHeight="26.0" prefWidth="54.0" />
+      <Label layoutX="43.0" layoutY="90.0" prefHeight="26.0" prefWidth="41.0" text="date:" />
+      <Label layoutX="310.0" layoutY="95.0" text="Hour:" />
+      <DatePicker fx:id="datePicker" layoutX="78.0" layoutY="91.0" />
+      <ChoiceBox fx:id="hourSelect" layoutX="347.0" layoutY="90.0" prefHeight="26.0" prefWidth="54.0" />
+      <Label layoutX="206.0" layoutY="14.0" prefHeight="54.0" prefWidth="174.0" text="Add Alarm">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <Button fx:id="submitBtn" layoutX="253.0" layoutY="134.0" mnemonicParsing="false" onAction="#submitBtnOnAction" text="Submit" />
+   </children>
+</AnchorPane>
